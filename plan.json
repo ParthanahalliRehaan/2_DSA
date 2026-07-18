@@ -1,0 +1,476 @@
+{
+  "plan_name": "DSA GrandMaster: 25-Weekend Game & Algorithm Journey",
+  "goal": "Master core DSA through JavaScript game development, then transition to AtCoder competitive programming",
+  "total_weeks": 25,
+  "phases": [
+    {
+      "phase": 1,
+      "name": "Foundation",
+      "weeks": "1-5",
+      "difficulty": "Easy"
+    },
+    {
+      "phase": 2,
+      "name": "Core Structures",
+      "weeks": "6-10",
+      "difficulty": "Easy-Medium"
+    },
+    {
+      "phase": 3,
+      "name": "Trees & Graphs",
+      "weeks": "11-15",
+      "difficulty": "Medium"
+    },
+    {
+      "phase": 4,
+      "name": "Advanced Algorithms",
+      "weeks": "16-20",
+      "difficulty": "Medium-Hard"
+    },
+    {
+      "phase": 5,
+      "name": "Competitive Patterns",
+      "weeks": "21-25",
+      "difficulty": "Hard"
+    }
+  ],
+  "weeks": [
+    {
+      "week": 1,
+      "phase": 1,
+      "game": "Snake",
+      "dsa": [
+        "Arrays",
+        "Queues"
+      ],
+      "difficulty": "Easy",
+      "concepts": "Array manipulation, queue operations (enqueue/dequeue), collision detection, coordinate systems",
+      "github_folder": "01-snake",
+      "key_learning": "Queues naturally model sequential data like a snake's body segments",
+      "weekend_breakdown": {
+        "saturday": "Build grid system, snake movement, food spawning",
+        "sunday": "Implement queue-based body growth, collision detection, game loop"
+      }
+    },
+    {
+      "week": 2,
+      "phase": 1,
+      "game": "Tic-Tac-Toe",
+      "dsa": [
+        "2D Arrays",
+        "Matrix Traversal"
+      ],
+      "difficulty": "Easy",
+      "concepts": "2D array representation, win condition checking (row/col/diag traversal), turn management",
+      "github_folder": "02-tic-tac-toe",
+      "key_learning": "Matrix operations and pattern matching in 2D space",
+      "weekend_breakdown": {
+        "saturday": "Build 3x3 grid UI, player turn logic, click handlers",
+        "sunday": "Implement win-check algorithms for all 8 winning lines, draw detection"
+      }
+    },
+    {
+      "week": 3,
+      "phase": 1,
+      "game": "Memory Card Match",
+      "dsa": [
+        "Hash Maps",
+        "Sets"
+      ],
+      "difficulty": "Easy",
+      "concepts": "Hash map for O(1) card state lookup, Set for tracking matched pairs, shuffling algorithm (Fisher-Yates)",
+      "github_folder": "03-memory-match",
+      "key_learning": "Hash structures provide instant state checking without linear search",
+      "weekend_breakdown": {
+        "saturday": "Create card deck, shuffle logic, flip animation, pair matching",
+        "sunday": "Implement timer, move counter, hash-based state management, win condition"
+      }
+    },
+    {
+      "week": 4,
+      "phase": 1,
+      "game": "Brick Breaker",
+      "dsa": [
+        "Arrays",
+        "Basic Physics Simulation"
+      ],
+      "difficulty": "Easy",
+      "concepts": "Array of brick objects, boundary collision, vector reflection, AABB collision detection",
+      "github_folder": "04-brick-breaker",
+      "key_learning": "Arrays store game objects; physics requires understanding vectors and bounds",
+      "weekend_breakdown": {
+        "saturday": "Build paddle, ball physics, wall collisions",
+        "sunday": "Implement brick array, brick-ball collision, level progression, score system"
+      }
+    },
+    {
+      "week": 5,
+      "phase": 1,
+      "game": "Tower of Hanoi",
+      "dsa": [
+        "Stacks",
+        "Recursion"
+      ],
+      "difficulty": "Easy",
+      "concepts": "Stack operations (push/pop/peek), recursive solution, base case & recursive case, call stack visualization",
+      "github_folder": "05-tower-of-hanoi",
+      "key_learning": "Recursion elegantly solves problems with optimal substructure; stacks model the physical towers",
+      "weekend_breakdown": {
+        "saturday": "Build 3 pegs as stacks, disk rendering, drag-and-drop or click-to-move",
+        "sunday": "Implement recursive solver with animation, step counter, validate moves"
+      }
+    },
+    {
+      "week": 6,
+      "phase": 2,
+      "game": "Rhythm Tap",
+      "dsa": [
+        "Linked Lists"
+      ],
+      "difficulty": "Easy-Medium",
+      "concepts": "Singly linked list for note sequence, traversal, insertion, deletion, timing synchronization",
+      "github_folder": "06-rhythm-tap",
+      "key_learning": "Linked lists excel at sequential data with frequent insertions/deletions without shifting",
+      "weekend_breakdown": {
+        "saturday": "Build note lane UI, linked list note structure, beat mapping",
+        "sunday": "Implement note spawning, hit detection, combo system, scoring based on timing accuracy"
+      }
+    },
+    {
+      "week": 7,
+      "phase": 2,
+      "game": "Pixel Paint Pro",
+      "dsa": [
+        "Stacks",
+        "Undo/Redo"
+      ],
+      "difficulty": "Easy-Medium",
+      "concepts": "Two stacks for undo/redo, command pattern, deep copy for state preservation, LIFO principle",
+      "github_folder": "07-pixel-paint",
+      "key_learning": "Dual stacks enable infinite undo/redo — a classic application of LIFO data structures",
+      "weekend_breakdown": {
+        "saturday": "Build canvas, color picker, brush tools, stack-based action history",
+        "sunday": "Implement undo/redo with dual stacks, export to image, fill bucket (BFS preview)"
+      }
+    },
+    {
+      "week": 8,
+      "phase": 2,
+      "game": "Diner Dash Sim",
+      "dsa": [
+        "Queues",
+        "Priority Basics"
+      ],
+      "difficulty": "Easy-Medium",
+      "concepts": "FIFO queue for customer line, queue for order processing, patience timer, dequeue operations",
+      "github_folder": "08-diner-dash",
+      "key_learning": "Real-world service systems are queue-based; FIFO ensures fairness in processing",
+      "weekend_breakdown": {
+        "saturday": "Build customer queue system, table assignment, order taking",
+        "sunday": "Implement cooking queue, serving queue, customer patience meter, revenue tracking"
+      }
+    },
+    {
+      "week": 9,
+      "phase": 2,
+      "game": "Word Guess (Hangman++)",
+      "dsa": [
+        "Strings",
+        "Hash Maps"
+      ],
+      "difficulty": "Easy-Medium",
+      "concepts": "String manipulation, hash map for letter frequency, set for guessed letters, string comparison",
+      "github_folder": "09-word-guess",
+      "key_learning": "Hash maps enable O(1) lookup for letter existence and frequency counting",
+      "weekend_breakdown": {
+        "saturday": "Build word bank, hidden word display, letter input, hangman drawing",
+        "sunday": "Implement frequency analysis hint system, difficulty levels, word categories, streak tracker"
+      }
+    },
+    {
+      "week": 10,
+      "phase": 2,
+      "game": "Boggle Blast",
+      "dsa": [
+        "Trie",
+        "DFS"
+      ],
+      "difficulty": "Easy-Medium",
+      "concepts": "Trie for dictionary storage, DFS for grid traversal, prefix pruning, backtracking on grid",
+      "github_folder": "10-boggle-blast",
+      "key_learning": "Tries enable efficient prefix-based word validation; DFS explores all paths in a grid",
+      "weekend_breakdown": {
+        "saturday": "Build 4x4 letter grid, Trie dictionary loader, word input validation",
+        "sunday": "Implement DFS word finder with Trie pruning, timer, score by word length, highlight found paths"
+      }
+    },
+    {
+      "week": 11,
+      "phase": 3,
+      "game": "Family Tree Detective",
+      "dsa": [
+        "Binary Trees",
+        "Tree Traversals"
+      ],
+      "difficulty": "Medium",
+      "concepts": "Binary tree construction, inorder/preorder/postorder traversal, level-order (BFS), tree height",
+      "github_folder": "11-family-tree",
+      "key_learning": "Different traversals reveal different relationships; trees model hierarchical data naturally",
+      "weekend_breakdown": {
+        "saturday": "Build tree node structure, family member creation, tree rendering",
+        "sunday": "Implement all 4 traversals, find ancestor/descendant, LCA finder, tree depth calculator"
+      }
+    },
+    {
+      "week": 12,
+      "phase": 3,
+      "game": "BST Number Hunter",
+      "dsa": [
+        "Binary Search Tree"
+      ],
+      "difficulty": "Medium",
+      "concepts": "BST insertion, search, deletion, tree balancing intuition, inorder traversal for sorted order",
+      "github_folder": "12-bst-hunter",
+      "key_learning": "BST properties enable O(log n) operations; inorder traversal yields sorted sequence",
+      "weekend_breakdown": {
+        "saturday": "Build BST from random numbers, visual tree rendering, search animation",
+        "sunday": "Implement insert/delete with animations, find min/max, kth smallest element game mode"
+      }
+    },
+    {
+      "week": 13,
+      "phase": 3,
+      "game": "Minesweeper",
+      "dsa": [
+        "Graphs",
+        "BFS"
+      ],
+      "difficulty": "Medium",
+      "concepts": "Grid as implicit graph, BFS for empty cell revelation, adjacency counting, flood fill algorithm",
+      "github_folder": "13-minesweeper",
+      "key_learning": "BFS efficiently reveals connected safe zones; grids are graphs in disguise",
+      "weekend_breakdown": {
+        "saturday": "Build grid, mine placement, neighbor mine counting, click handlers",
+        "sunday": "Implement BFS flood fill for zero-adjacent cells, flag system, win/lose detection, timer"
+      }
+    },
+    {
+      "week": 14,
+      "phase": 3,
+      "game": "Pac-Man Clone",
+      "dsa": [
+        "Graphs",
+        "DFS",
+        "BFS"
+      ],
+      "difficulty": "Medium",
+      "concepts": "Maze as graph, BFS for ghost pathfinding, DFS for maze exploration, state machines for ghost AI",
+      "github_folder": "14-pac-man",
+      "key_learning": "Graph traversal powers AI decision-making; BFS finds shortest paths for chasing behavior",
+      "weekend_breakdown": {
+        "saturday": "Build maze graph, Pac-Man movement, dot collection, power pellets",
+        "sunday": "Implement BFS ghost AI, ghost states (chase/scatter/frightened), score system, lives"
+      }
+    },
+    {
+      "week": 15,
+      "phase": 3,
+      "game": "ER Triage Master",
+      "dsa": [
+        "Heaps",
+        "Priority Queues"
+      ],
+      "difficulty": "Medium",
+      "concepts": "Min-heap/max-heap, priority queue operations, heapify, extract-min, decrease-key",
+      "github_folder": "15-er-triage",
+      "key_learning": "Heaps guarantee O(log n) access to highest-priority element — critical for real-time systems",
+      "weekend_breakdown": {
+        "saturday": "Build patient generator, priority scoring (severity + wait time), heap structure",
+        "sunday": "Implement heap-based priority queue, treat patients in order, resource management, statistics"
+      }
+    },
+    {
+      "week": 16,
+      "phase": 4,
+      "game": "Sort Race Championship",
+      "dsa": [
+        "Sorting Algorithms"
+      ],
+      "difficulty": "Medium-Hard",
+      "concepts": "Bubble, Selection, Insertion, Merge, Quick, Heap sort; time complexity visualization, divide & conquer",
+      "github_folder": "16-sort-race",
+      "key_learning": "Understanding tradeoffs between O(n²) and O(n log n) sorts; divide & conquer paradigm",
+      "weekend_breakdown": {
+        "saturday": "Implement 6 sorting algorithms with step-by-step visualization bars",
+        "sunday": "Build race mode (algorithms compete), user prediction betting, complexity comparison chart"
+      }
+    },
+    {
+      "week": 17,
+      "phase": 4,
+      "game": "N-Queens Puzzle",
+      "dsa": [
+        "Backtracking"
+      ],
+      "difficulty": "Medium-Hard",
+      "concepts": "Backtracking algorithm, pruning invalid states, recursion tree, constraint satisfaction, board state representation",
+      "github_folder": "17-n-queens",
+      "key_learning": "Backtracking systematically explores possibilities while abandoning partial candidates that fail constraints",
+      "weekend_breakdown": {
+        "saturday": "Build NxN board, queen placement, attack validation (row/col/diag)",
+        "sunday": "Implement backtracking solver with animation, count all solutions, user solve mode with hints"
+      }
+    },
+    {
+      "week": 18,
+      "phase": 4,
+      "game": "Sudoku Master",
+      "dsa": [
+        "Backtracking",
+        "Constraint Propagation"
+      ],
+      "difficulty": "Medium-Hard",
+      "concepts": "Backtracking with forward checking, valid candidate generation, 3x3 subgrid validation, puzzle generation",
+      "github_folder": "18-sudoku",
+      "key_learning": "Constraint propagation reduces search space dramatically before backtracking begins",
+      "weekend_breakdown": {
+        "saturday": "Build 9x9 grid, input validation, puzzle loader, solver with backtracking",
+        "sunday": "Implement puzzle generator (reverse solver), difficulty levels, hint system, timer"
+      }
+    },
+    {
+      "week": 19,
+      "phase": 4,
+      "game": "Stair Climber DP",
+      "dsa": [
+        "Dynamic Programming",
+        "Memoization"
+      ],
+      "difficulty": "Medium-Hard",
+      "concepts": "Top-down memoization, bottom-up tabulation, optimal substructure, overlapping subproblems, Fibonacci pattern",
+      "github_folder": "19-stair-climber",
+      "key_learning": "DP avoids recomputation by storing subproblem solutions; memoization vs tabulation tradeoffs",
+      "weekend_breakdown": {
+        "saturday": "Build stair-climbing game, recursive solution, add memoization cache",
+        "sunday": "Implement tabulation version, compare performance, add obstacles/variable steps, coin change variant"
+      }
+    },
+    {
+      "week": 20,
+      "phase": 4,
+      "game": "Knapsack Hero",
+      "dsa": [
+        "Dynamic Programming",
+        "0/1 Knapsack"
+      ],
+      "difficulty": "Medium-Hard",
+      "concepts": "2D DP table, 0/1 knapsack recurrence, space optimization, item selection reconstruction",
+      "github_folder": "20-knapsack-hero",
+      "key_learning": "2D DP tables capture state transitions; optimal substructure builds solutions from smaller knapsacks",
+      "weekend_breakdown": {
+        "saturday": "Build RPG inventory UI, item weight/value system, DP solver with table visualization",
+        "sunday": "Implement item reconstruction (which items picked), space-optimized 1D version, multiple test cases"
+      }
+    },
+    {
+      "week": 21,
+      "phase": 5,
+      "game": "Delivery Driver: Shortest Path",
+      "dsa": [
+        "Dijkstra's Algorithm",
+        "Graphs"
+      ],
+      "difficulty": "Hard",
+      "concepts": "Weighted graphs, relaxation, priority queue in Dijkstra, shortest path tree, path reconstruction",
+      "github_folder": "21-delivery-driver",
+      "key_learning": "Dijkstra's greedily selects the minimum distance node, guaranteeing shortest paths in positive-weight graphs",
+      "weekend_breakdown": {
+        "saturday": "Build city map as weighted graph, Dijkstra implementation with min-heap priority queue",
+        "sunday": "Add multiple delivery points, traffic weight updates, path animation, fuel cost optimization"
+      }
+    },
+    {
+      "week": 22,
+      "phase": 5,
+      "game": "Huffman Compressor",
+      "dsa": [
+        "Greedy Algorithm",
+        "Huffman Coding",
+        "Heaps"
+      ],
+      "difficulty": "Hard",
+      "concepts": "Greedy choice property, Huffman tree construction, min-heap for merging, prefix codes, compression ratio",
+      "github_folder": "22-huffman-compressor",
+      "key_learning": "Greedy algorithms make locally optimal choices that lead to globally optimal solutions in specific structures",
+      "weekend_breakdown": {
+        "saturday": "Build frequency counter, min-heap for Huffman tree construction, tree visualization",
+        "sunday": "Implement encoding/decoding, compression ratio calculator, interactive text compression game"
+      }
+    },
+    {
+      "week": 23,
+      "phase": 5,
+      "game": "Maze Generator & Solver",
+      "dsa": [
+        "Disjoint Set Union (Union-Find)",
+        "Graphs",
+        "MST"
+      ],
+      "difficulty": "Hard",
+      "concepts": "DSU with path compression & union by rank, Kruskal's algorithm for maze generation, randomized edge weights",
+      "github_folder": "23-maze-generator",
+      "key_learning": "DSU efficiently tracks connected components; Kruskal's MST generates perfect mazes",
+      "weekend_breakdown": {
+        "saturday": "Implement DSU data structure, Kruskal-based maze generation with wall carving",
+        "sunday": "Add multiple solving algorithms (DFS, BFS, wall-follower), maze complexity slider, solution reveal"
+      }
+    },
+    {
+      "week": 24,
+      "phase": 5,
+      "game": "Range Query Warrior",
+      "dsa": [
+        "Segment Trees",
+        "Fenwick Tree (BIT)"
+      ],
+      "difficulty": "Hard",
+      "concepts": "Segment tree construction, range query, point update, lazy propagation intro, Fenwick tree for prefix sums",
+      "github_folder": "24-range-query",
+      "key_learning": "Segment trees answer range queries in O(log n) after O(n) build — essential for competitive programming",
+      "weekend_breakdown": {
+        "saturday": "Build segment tree with array visualization, range sum queries, point updates",
+        "sunday": "Implement Fenwick tree variant, range max query mode, comparison with brute force, interactive challenges"
+      }
+    },
+    {
+      "week": 25,
+      "phase": 5,
+      "game": "AtCoder Bootcamp",
+      "dsa": [
+        "Mixed Review",
+        "Competitive Patterns"
+      ],
+      "difficulty": "Hard",
+      "concepts": "Fast I/O patterns, problem classification, greedy/DP/graph recognition, contest simulation, time management",
+      "github_folder": "25-atcoder-bootcamp",
+      "key_learning": "Pattern recognition separates good competitive programmers from beginners; speed comes from repetition",
+      "weekend_breakdown": {
+        "saturday": "Solve 5 AtCoder ABC problems (A-E), implement fast input template, classify each by technique",
+        "sunday": "Timed mock contest (3 problems, 90 min), review solutions, build personal template library, plan next steps"
+      },
+      "next_steps": [
+        "Register on AtCoder (atcoder.jp)",
+        "Target: Solve ABC-A and ABC-B consistently within 10 minutes",
+        "Gradually tackle ABC-C (requires weeks 1-20 concepts)",
+        "Join Beginner Contests every Saturday 21:00 JST"
+      ]
+    }
+  ],
+  "recommended_tools": {
+    "editor": "VS Code",
+    "graphics": "HTML5 Canvas API or p5.js",
+    "version_control": "Git + GitHub",
+    "deployment": "GitHub Pages",
+    "atcoder_practice": "AtCoder Beginner Contest (ABC) Archive"
+  }
+}
